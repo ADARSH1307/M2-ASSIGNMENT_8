@@ -1,0 +1,8 @@
+repos:
+  - repo: local
+    rev: hooks/pre-commit.py
+    hooks:
+      - id: pylint
+        args: ['--fail-under=10']
+      - id: black
+      - id: flake8
